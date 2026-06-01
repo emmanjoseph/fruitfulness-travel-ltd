@@ -62,6 +62,6 @@ export const formSchema = z.object({
   numberOfAdults: z.number().int().min(1),
   numberOfChildren: z.number().int().min(0),
   pricingTier: z.string().min(1, "Select a pricing tier"),
-  nationality: z.string().min(2,'Please enter a nationality'),
+  nationality: z.string().min(2,'Please select your nationality'),
   specialRequests: z.string().optional(),
 });

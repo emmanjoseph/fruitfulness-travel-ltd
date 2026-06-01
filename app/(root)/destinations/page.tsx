@@ -6,6 +6,7 @@ import Footer from "@/components/sections/Footer";
 import ContactCTA from "@/components/sections/ContactCTA";
 import Pagination from "@/components/pagination";
 import DestinationsHero from "@/components/sections/destinations-hero";
+import Faq from "@/components/sections/faq";
 
 export type Props = {
     searchParams: Promise<{
@@ -58,6 +59,7 @@ const Page = async ({ searchParams }: Props) => {
                     basePath="/destinations"
                 />
             </div>
+            <Faq/>
             <ContactCTA/>
 
             <Footer />

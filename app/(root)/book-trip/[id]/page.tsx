@@ -4,7 +4,15 @@ import Footer from "@/components/sections/Footer";
 import BookTripClient from "@/components/book-trip-client";
 
 const tripname = "kenya safari"
-const Page = () => {
+
+
+interface PageProps {
+    params: Promise<{ id: string }>;
+}
+
+const Page = async ({ params }: PageProps) => {
+    const { id } = await params;
+    console.log(id);
     return (
         <section className={''}>
             <DestinationsHero
@@ -12,7 +20,7 @@ const Page = () => {
              subtitle={`${tripname}`}
             />
 
-            <BookTripClient/>
+            <BookTripClient tripId={id}/>
             <Footer/>
         </section>
     )

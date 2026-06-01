@@ -1,14 +1,17 @@
 import React from 'react'
 import Footer from "@/components/sections/Footer";
 import CustomTripStepper from "@/components/plan-trip";
-import DestinationsHero from "@/components/sections/destinations-hero";
+import VideoHero from "@/components/video-hero";
 
 const Page = () => {
     return (
         <section>
-            <DestinationsHero
-              title={'Plan your trip with us'}
-              subtitle={'Choose your destination, dates, and get personalized recommendations.'}
+            <VideoHero
+                video={{
+                    imageUrl:"https://images.unsplash.com/photo-1521336575822-6da63fb45455?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2F5YWt8ZW58MHx8MHx8fDA%3D",
+                    title:" Customize your trip ",
+                    subtitle:"Build your dream trip"
+                }}
             />
             <CustomTripStepper/>
 
