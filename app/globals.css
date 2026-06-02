@@ -243,10 +243,8 @@ html {
   margin: 0;
   width: 3.6rem;
   height: 3.6rem;
-
   z-index: 1;
   border-radius: 50%;
-  display: flex;
   align-items: center;
   justify-content: center;
   transform: rotate(0deg);

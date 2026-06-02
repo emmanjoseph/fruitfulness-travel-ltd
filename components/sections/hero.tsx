@@ -6,9 +6,7 @@ import Link from "next/link";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useNavbar } from "@/hooks/use-navbar";
-import Image from "next/image";
 import {AnimatedTooltip} from "@/components/ui/animated-tooltip";
-
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
