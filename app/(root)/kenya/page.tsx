@@ -1,4 +1,4 @@
-import React from 'react'
+import type { Metadata } from "next";
 import VideoHero from "@/components/video-hero";
 import PexelsGallery from "@/components/sections/pexels-gallery";
 import FiltersBar from "@/components/filters-bar";
@@ -8,6 +8,12 @@ import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/co
 import { kenyanfaq} from "@/lib";
 import Footer from "@/components/sections/Footer";
 import CustomizeCta from "@/components/sections/customize-cta";
+
+export const metadata: Metadata = {
+    title: "Kenya Safari Tours",
+    description:
+        "Plan a Kenya safari through the Maasai Mara, Amboseli, Tsavo, Samburu, Nairobi, and the Indian Ocean coast.",
+};
 
 export type Props = {
     searchParams: Promise<{

@@ -32,8 +32,14 @@ const Destinations = async () => {
                         <ArrowUpRight size={20}/></p>
                 </Link>
             </div>
-
-            <TripCarousel trips={trips} />
+            {
+                trips ? (
+                    <TripCarousel trips={trips} />
+                    
+                ):(
+                    <div>There are no journeys available</div>
+                )
+            }
         </div>
     )
 }

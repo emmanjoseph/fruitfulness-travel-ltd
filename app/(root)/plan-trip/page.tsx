@@ -1,7 +1,13 @@
-import React from 'react'
+import type { Metadata } from "next";
 import Footer from "@/components/sections/Footer";
 import CustomTripStepper from "@/components/plan-trip";
 import VideoHero from "@/components/video-hero";
+
+export const metadata: Metadata = {
+    title: "Customize Your Trip",
+    description:
+        "Build a personalized East African itinerary with Fruitfulness Travel Limited's custom trip planner.",
+};
 
 const Page = () => {
     return (

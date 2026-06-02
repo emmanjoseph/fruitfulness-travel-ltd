@@ -1,4 +1,4 @@
-import React from 'react'
+import type { Metadata } from "next";
 import FiltersBar from "@/components/filters-bar";
 import {getAllTrips} from "@/lib/api";
 import TripsGrid from "@/components/trips-grid";
@@ -7,6 +7,12 @@ import ContactCTA from "@/components/sections/ContactCTA";
 import Pagination from "@/components/pagination";
 import DestinationsHero from "@/components/sections/destinations-hero";
 import Faq from "@/components/sections/faq";
+
+export const metadata: Metadata = {
+    title: "Safari Destinations",
+    description:
+        "Browse curated safari journeys across Kenya and Tanzania, with filters for country and experience style.",
+};
 
 export type Props = {
     searchParams: Promise<{

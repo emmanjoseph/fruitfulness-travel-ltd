@@ -1,4 +1,4 @@
-import React from 'react'
+import type { Metadata } from "next";
 
 import VideoHero from "@/components/video-hero";
 import PexelsGallery from "@/components/sections/pexels-gallery";
@@ -6,9 +6,15 @@ import FiltersBar from "@/components/filters-bar";
 import {getAllTrips} from "@/lib/api";
 import TripsGrid from "@/components/trips-grid";
 import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/components/ui/accordion";
-import {kenyanfaq, tanzaniafaq} from "@/lib";
+import {tanzaniafaq} from "@/lib";
 import Footer from "@/components/sections/Footer";
 import CustomizeCta from "@/components/sections/customize-cta";
+
+export const metadata: Metadata = {
+    title: "Tanzania Safari Tours",
+    description:
+        "Discover Tanzania safaris across the Serengeti, Ngorongoro Crater, Mount Kilimanjaro, Tarangire, and Zanzibar.",
+};
 
 export type Props = {
     searchParams: Promise<{

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import DestinationsHero from "@/components/sections/destinations-hero";
 import Footer from "@/components/sections/Footer";
 import {
@@ -8,6 +9,12 @@ import {
 } from "@/components/ui/accordion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { faqs, kenyanfaq, tanzaniafaq } from "@/lib";
+
+export const metadata: Metadata = {
+  title: "Frequently Asked Questions",
+  description:
+    "Find answers about Kenya and Tanzania safaris, booking, park fees, travel insurance, safety, and custom trip planning.",
+};
 
 const faqGroups = [
   {

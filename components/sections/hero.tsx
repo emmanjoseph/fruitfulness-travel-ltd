@@ -100,7 +100,7 @@ const Hero = () => {
             });
 
             // Horizontal Scroll Text Animation
-            gsap.fromTo(scrollTextRef.current, 
+            gsap.fromTo(scrollTextRef.current,
                 { x: "100%" },
                 {
                     x: "-100%",
@@ -138,12 +138,12 @@ const Hero = () => {
                 </h1>
 
                 <div ref={lineRef} className="border border-gray-600"/>
-                <div className="flex items-center justify-between">
+                <div className="flex gap-4 flex-col md:flex-row items-center justify-between">
                     <p ref={paragraphRef} className={'text-gray-600 text-xl max-w-2xl'}>
                         We create immersive traveling experiences. Dive into cultures, uncover local secrets and build journeys to match your style, pace and passion for exploration.
                     </p>
 
-                    <div className="flex space-x-4 items-center justify-center">
+                    <div className="flex gap-4 items-center justify-center">
                         <Link href={'#destinations'}>
                             <ArrowDown size={40} className={'text-gray-800 animate-bounce'}/>
                         </Link>
@@ -162,20 +162,20 @@ const Hero = () => {
 
             <div ref={videoContainerRef} className={'relative h-[60vh] lg:h-[90vh] overflow-hidden'}>
                 <div className="absolute top-[-10%] left-0 w-full h-[120%]">
-                    <video 
+                    <video
                         ref={videoRef}
-                        src={'/hero-bg.mp4'} 
-                        autoPlay 
-                        loop 
-                        muted 
+                        src={'/hero-bg.mp4'}
+                        autoPlay
+                        loop
+                        muted
                         playsInline
                         className={'w-full h-full object-cover'}
                     />
                 </div>
 
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none w-full h-full bg-linear-to-t from-black/60 to-transparent">
-                    <h1 
-                        ref={scrollTextRef} 
+                    <h1
+                        ref={scrollTextRef}
                         className="text-white text-7xl lg:text-[12rem] font-bold whitespace-nowrap opacity-90 font-pangaia uppercase"
                     >
                         We dont just craft journeys , we craft the whole experience
