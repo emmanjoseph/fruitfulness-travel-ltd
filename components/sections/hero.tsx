@@ -22,46 +22,40 @@ const Hero = () => {
     const people = [
         {
             id: 1,
-            name: "John Doe",
-            designation: "Software Engineer",
+            name: "Mount Kenya",
+            designation: "Kenya",
             image:
-                "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80",
+                "https://images.unsplash.com/photo-1614531341773-3bff8b7cb3fc?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
             id: 2,
-            name: "Robert Johnson",
-            designation: "Product Manager",
+            name: "Amboseli",
+            designation: "Tanzania",
             image:
-                "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+                "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFmcmljYXxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
             id: 3,
-            name: "Jane Smith",
-            designation: "Data Scientist",
+            name: "Mombasa",
+            designation: "Kenya",
             image:
-                "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+                "https://images.unsplash.com/photo-1680346087980-1dbc57f7ba56?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9tYmFzYXxlbnwwfHwwfHx8MA%3D%3D",
         },
         {
             id: 4,
-            name: "Emily Davis",
-            designation: "UX Designer",
+            name: "Kruger National Park",
+            designation: "Uganda",
             image:
-                "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+                "https://images.unsplash.com/photo-1586943353950-95bdbe3207a1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a3J1Z2VyJTIwbmF0aW9uYWwlMjBwYXJrfGVufDB8fDB8fHww",
         },
         {
             id: 5,
-            name: "Tyler Durden",
-            designation: "Soap Developer",
+            name: "Zanzibar beach",
+            designation: "Tanzania",
             image:
-                "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
+                "https://images.unsplash.com/photo-1621583628955-42fbc37bf424?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8emFuemliYXIlMjBiZWFjaHxlbnwwfHwwfHx8MA%3D%3D",
         },
-        {
-            id: 6,
-            name: "Dora",
-            designation: "The Explorer",
-            image:
-                "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80",
-        },
+
     ];
 
     useLayoutEffect(() => {

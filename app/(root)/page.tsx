@@ -7,6 +7,7 @@ import Faq from "@/components/sections/faq";
 import Testimonials from "@/components/sections/testimonials";
 import ContactCta from "@/components/sections/ContactCTA";
 import Footer from "@/components/sections/Footer";
+import Partner from "@/components/partner";
 
 export const metadata: Metadata = {
     title: "Kenya and Tanzania Safari Tours",
@@ -23,6 +24,7 @@ const Page = () => {
             <Reasons/>
             <Faq/>
             <Testimonials/>
+            <Partner/>
             <ContactCta/>
             <Footer/>
         </main>

@@ -19,7 +19,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false); // 👈 array destructuring, not object
 
     return (
-        <header className="absolute top-0 left-0 w-full z-50 transition-colors duration-300">
+        <header className="absolute top-0 left-0 w-full z-50 transition-colors duration-300 md:pt-8">
             <div className="container mx-auto py-6 px-4 flex items-center justify-between">
                 <Link href="/">
                     <h1 className={cn(

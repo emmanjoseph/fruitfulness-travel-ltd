@@ -52,6 +52,9 @@ export const metadata: Metadata = {
     default: "Fruitfulness Travel Limited",
     template: "%s | Fruitfulness Travel Limited",
   },
+    icons:{
+      icon:"/palm.svg",
+    },
   description:
     "Tailor-made Kenya and Tanzania safari journeys, cultural escapes, and custom travel planning across East Africa.",
   applicationName: "Fruitfulness Travel Limited",
